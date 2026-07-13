@@ -1,0 +1,37 @@
+body {
+	color: black;
+	background-color: white;
+	font-family: Arial, Verdana, Helvetica, serif;
+}
+
+a, a:link, a:visited {
+	color: #00F;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #F00;
+	text-decoration: none;
+}
+
+.kost-input {
+	width: 50px;
+}
+
+.button {
+	margin: 0px;
+	padding: 0px;
+	width: 120px;
+	height: 30px;
+	cursor: pointer;
+	font-weight: bold;
+	border: 2px solid red;
+	background: #FFFF00;
+	color: red;
+}
+
+.button:hover {
+	border: 2px solid #FFFF00;
+	background: red;
+	color: #FFFF00;
+}
