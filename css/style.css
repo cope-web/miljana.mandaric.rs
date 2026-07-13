@@ -1,17 +1,71 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+}
+
 body {
-	color: black;
-	background-color: white;
-	font-family: Arial, Verdana, Helvetica, serif;
+	color: #f5f5f5;
+	font-family: 'Inter', Arial, Verdana, Helvetica, sans-serif;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 24px;
+	box-sizing: border-box;
+
+	background-image:
+		linear-gradient(rgba(10, 12, 20, 0.55), rgba(10, 12, 20, 0.7)),
+		url('../img/cello.webp');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 a, a:link, a:visited {
-	color: #00F;
+	color: #7cc0ff;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #F00;
-	text-decoration: none;
+	color: #ff6b6b;
+	text-decoration: underline;
+}
+
+.card {
+	width: 800px;
+	max-width: 100%;
+	box-sizing: border-box;
+	padding: 36px 40px;
+	background: rgba(15, 18, 28, 0.55);
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	border-radius: 16px;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+}
+
+.card h2 {
+	margin: 0 0 20px;
+	font-weight: 700;
+	letter-spacing: -0.01em;
+	color: #ffffff;
+}
+
+.card b {
+	color: #ffffff;
+}
+
+.card i {
+	color: #d5dae6;
+}
+
+.photo {
+	max-width: 100%;
+	height: auto;
+	border-radius: 12px;
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
 }
 
 .kost-input {
@@ -34,4 +88,31 @@ a:hover {
 	border: 2px solid #FFFF00;
 	background: red;
 	color: #FFFF00;
+}
+
+@media (max-width: 600px) {
+	.card {
+		padding: 24px 20px;
+	}
+
+	.card table,
+	.card tr,
+	.card td {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+
+	.card td.Image {
+		text-align: center;
+	}
+
+	.photo {
+		margin-top: 20px;
+		max-width: 220px;
+	}
+
+	body {
+		background-attachment: scroll;
+	}
 }
